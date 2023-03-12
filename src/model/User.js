@@ -13,10 +13,6 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: false,
     },
-    otp: {
-      type: Number,
-      required: false,
-    },
     password: {
       type: String,
       required: false,
@@ -31,6 +27,21 @@ const userSchema = new mongoose.Schema(
         type: Date,
         required: false,
       },
+    },
+    otpVerify: {
+      otp: {
+        type: Number,
+        required: false,
+      },
+      ExpiresIn: {
+        type: Date,
+        required: false,
+      },
+    },
+    isAccountVerified: {
+      type: Number,
+      required: false,
+      default: 0,
     },
     deleteStatus: {
       type: Number,
