@@ -43,3 +43,35 @@ exports.resetPasswordMailforAdmin = (data) => {
     );
 };
 //#endregion
+
+//#region reset password Mail of User 
+exports.resetPasswordMailforUser = (data) => {
+    let to = [data.email];
+    const userName = data.userName;
+    const forgotId = data.resetPassword.forgotId;
+    ejs.renderFile(
+        path.join(__dirname, "../templates/ForgotPasswordMail.ejs"),
+        { userName, forgotId },
+        (err, data) => {
+            if (err) {
+                console.log(err);
+            } else {
+                const mailOptions = {
+                    from: process.env.USER_FROM,
+                    to: to,
+                    subject: "Reset password link",
+                    html: data,
+                };
+                transporter.sendMail(mailOptions, (error, info) => {
+                    if (error) {
+                        console.log(error);
+                    } else {
+                        console.log("Message sent");
+
+                    }
+                });
+            }
+        }
+    );
+};
+//#endregion
