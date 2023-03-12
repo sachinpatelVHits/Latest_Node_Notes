@@ -1,0 +1,29 @@
+{
+    "DATABASE_CONNECTED": "Database connected",
+    "DATABASE_CONNECTION_ERROR": "Database connection error",
+
+
+    "ADMIN_ALREADY_EXIST": "Admin already exist",
+    "ADMIN_ACCOUNT_CREATED": "Admin account created",
+    "ADMIN_LOGGED_IN": "Admin logged in!",
+    "ADMIN_NOT_EXIST": "Admin not exist",
+
+
+    "USER_ALREADY_EXIST": "User already exist",
+    "USER_ACCOUNT_CREATED": "User account created",
+    "USER_NOT_EXIST": "User not exist",
+
+
+    "INCORRECT_CREDENTIALS": "Incorrect credentials",
+    "FORGOT_PASSWORD_MAIL_SEND":"Forgot password mail sent to your registered email",
+    "PLEASE_USE_DIFFRENT_PASSWORD": "Please use different password",
+    "PASSWORD_CHANGED": "Password changed",
+    "RESET_LINK_IS_EXPIRED": "Reset link is expired",
+
+
+    "FAILED_TO_REGISTER_AS_ADMIN": "Failed to register as admin",
+    "FAILED_TO_REGISTER_AS_USER": "Failed to register as User",
+
+
+    "INTERNAL_SERVER_ERROR": "Internal server error"
+}
