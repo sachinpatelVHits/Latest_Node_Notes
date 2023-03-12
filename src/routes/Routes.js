@@ -13,6 +13,8 @@ router.post('/admin/reset-password', AdminController.resetPassword)
 router.post('/user/register', UserController.registerUser)
 router.post('/user/login', UserController.login)
 router.post('/user/login-with-otp', UserController.loginWithOtp)
+router.post('/user/resend-otp', UserController.resendOtp)
+router.post('/user/verify-otp', UserController.verifyOtp)
 router.post('/user/forgot-password', UserController.forgotPassword)
 router.post('/user/reset-password', UserController.resetPassword)
 

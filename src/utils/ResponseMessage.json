@@ -12,7 +12,10 @@
     "USER_ALREADY_EXIST": "User already exist",
     "USER_ACCOUNT_CREATED": "User account created",
     "USER_NOT_EXIST": "User not exist",
-
+    "OTP_EXPIRE": "OTP Expire",
+    "OTP_VERIFIED": "OTP verified",
+    "ACCOUNT_ALREADY_VERIFIED": "Account already verified",
+    "VERIFICATION_CODE_SENT": "Verification code sent",
 
     "INCORRECT_CREDENTIALS": "Incorrect credentials",
     "FORGOT_PASSWORD_MAIL_SEND":"Forgot password mail sent to your registered email",
